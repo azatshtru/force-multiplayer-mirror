@@ -6,12 +6,11 @@ ScriptsOnlyBuild:
     - Health
     - PlayerController
     Mirror.Components.dll:
-    - Mirror.Discovery.NetworkDiscovery
-    - Mirror.Discovery.NetworkDiscoveryHUD
     - Mirror.NetworkTransform
     Mirror.dll:
     - Mirror.NetworkIdentity
     - Mirror.NetworkManager
+    - Mirror.NetworkManagerHUD
     - Mirror.NetworkStartPosition
     - kcp2k.KcpTransport
     Unity.Rider.Editor.dll:
@@ -60,39 +59,37 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 11288}
+      Script: {instanceID: 11294}
     - Class: 114
-      Script: {instanceID: 11320}
+      Script: {instanceID: 11326}
     - Class: 114
-      Script: {instanceID: 11592}
+      Script: {instanceID: 11418}
     - Class: 114
-      Script: {instanceID: 11596}
+      Script: {instanceID: 11598}
     - Class: 114
-      Script: {instanceID: 11618}
+      Script: {instanceID: 11602}
     - Class: 114
-      Script: {instanceID: 11670}
+      Script: {instanceID: 11624}
     - Class: 114
-      Script: {instanceID: 12210}
+      Script: {instanceID: 11676}
     - Class: 114
-      Script: {instanceID: 12318}
+      Script: {instanceID: 12216}
     - Class: 114
-      Script: {instanceID: 12946}
+      Script: {instanceID: 12324}
     - Class: 114
-      Script: {instanceID: 13764}
+      Script: {instanceID: 12952}
     - Class: 114
-      Script: {instanceID: 13866}
+      Script: {instanceID: 13218}
     - Class: 114
-      Script: {instanceID: 13974}
+      Script: {instanceID: 13772}
     - Class: 114
-      Script: {instanceID: 14118}
+      Script: {instanceID: 13874}
     - Class: 114
-      Script: {instanceID: 14280}
+      Script: {instanceID: 14126}
     - Class: 114
-      Script: {instanceID: 14448}
+      Script: {instanceID: 14456}
     - Class: 114
-      Script: {instanceID: 14588}
-    - Class: 114
-      Script: {instanceID: 16604}
+      Script: {instanceID: 14596}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 134
@@ -714,6 +711,12 @@ ScriptsOnlyBuild:
     className: NetworkSceneChecker
   - hash:
       serializedVersion: 2
+      Hash: 7c4d61ba679beaa5d71821c8c9d31078
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: CameraController
+  - hash:
+      serializedVersion: 2
       Hash: d6a8e9bec3160a152b9b2710593d3caa
     assemblyName: Unity.ProBuilder.dll
     namespaceName: UnityEngine.ProBuilder
@@ -1120,13 +1123,7 @@ ScriptsOnlyBuild:
     assemblyName: Mirror.dll
     namespaceName: kcp2k
     className: KcpTransport
-  - hash:
-      serializedVersion: 2
-      Hash: 7c4d61ba679beaa5d71821c8c9d31078
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: CameraController
   platform: 5
   scenePathNames:
   - Assets/Scenes/SampleScene.unity
-  playerPath: D:/Unity Projects/Basics/Multiplayer Basics/networking-basics/Builds/one/networking-basics.exe
+  playerPath: D:/Unity Projects/Basics/Multiplayer Basics/force-multiplayer/networking-basics/Builds/one/networking-basics.exe

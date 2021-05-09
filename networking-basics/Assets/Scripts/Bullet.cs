@@ -39,9 +39,13 @@ public class Bullet : NetworkBehaviour
     [ServerCallback]
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.CompareTag("Player") && other.gameObject != owner)
+        if(other.gameObject != owner)
         {
-            other.GetComponent<Health>().CmdTakeDamage();
+            if (other.gameObject.CompareTag("Player"))
+            {
+                other.GetComponent<Health>().CmdTakeDamage();
+            }
+            NetworkServer.Destroy(gameObject);
         }
     }
 }
