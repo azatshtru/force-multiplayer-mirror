@@ -22,7 +22,7 @@ public class Bullet : NetworkBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody>();
-        rb.AddForce(transform.forward * 20f, ForceMode.VelocityChange);
+        rb.AddForce(transform.forward * 15f, ForceMode.VelocityChange);
     }
 
     [Server]
